@@ -1,0 +1,112 @@
+.gallery-main {
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.gallery-main img {
+	width: 100%;
+	max-height: 450px;
+	object-fit: cover;
+	display: block;
+}
+
+.gallery-thumbs {
+	display: flex;
+	gap: 8px;
+	margin-top: 8px;
+	overflow-x: auto;
+}
+
+.gallery-thumbs img {
+	width: 80px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 8px;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.2s;
+	border: 2px solid transparent;
+}
+
+.gallery-thumbs img:hover,
+.gallery-thumbs img.active {
+	opacity: 1;
+	border-color: #2d5016;
+}
+
+/* Лайтбокс */
+.lightbox {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.85);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.lightbox-content {
+	position: relative;
+	max-width: 90vw;
+	max-height: 90vh;
+}
+
+.lightbox-content img {
+	max-width: 90vw;
+	max-height: 85vh;
+	border-radius: 8px;
+	display: block;
+}
+
+.lightbox-close {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.lightbox-prev,
+.lightbox-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(255, 255, 255, 0.15);
+	border: none;
+	color: #fff;
+	font-size: 2.5rem;
+	padding: 8px 16px;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: background 0.2s;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.lightbox-prev {
+	left: -60px;
+}
+
+.lightbox-next {
+	right: -60px;
+}
+
+@media (max-width: 768px) {
+	.lightbox-prev {
+		left: 8px;
+	}
+	.lightbox-next {
+		right: 8px;
+	}
+	.gallery-thumbs img {
+		width: 60px;
+		height: 45px;
+	}
+}

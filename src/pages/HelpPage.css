@@ -1,0 +1,66 @@
+.help-page {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.help-page h1 {
+	color: #2d5016;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.help-section {
+	margin-bottom: 40px;
+}
+
+.help-section h2 {
+	color: #2d5016;
+	font-size: 1.4rem;
+	margin-bottom: 12px;
+	border-bottom: 2px solid #e8f5e1;
+	padding-bottom: 8px;
+}
+
+.help-section p {
+	color: #444;
+	line-height: 1.7;
+}
+
+.tourism-types {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.tourism-type {
+	background: #f8faf6;
+	border: 1px solid #e0e8d8;
+	border-radius: 12px;
+	padding: 20px;
+}
+
+.tourism-type h3 {
+	margin: 0 0 8px;
+	font-size: 1.1rem;
+	color: #2d5016;
+}
+
+.tourism-type p {
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+.qr-section {
+	text-align: center;
+}
+
+.qr-code {
+	margin-top: 16px;
+}
+
+.qr-code img {
+	border-radius: 8px;
+	border: 1px solid #e0e0e0;
+}
