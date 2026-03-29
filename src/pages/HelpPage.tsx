@@ -24,9 +24,9 @@ export default function HelpPage() {
 					<div className='tourism-type'>
 						<h3>🏛 Познавательный</h3>
 						<p>
-							Исторические города, музеи, кремли, усадьбы. Узнайте больше об
-							истории Подмосковья, посетите места, связанные с великими людьми и
-							событиями.
+							Исторические города, музеи, кремли, усадьбы и природные
+							достопримечательности. Погружение в культуру и историю
+							Подмосковья.
 						</p>
 					</div>
 
@@ -54,12 +54,15 @@ export default function HelpPage() {
 				<p>Отсканируйте QR-код, чтобы открыть сайт на телефоне:</p>
 				<div className='qr-code'>
 					{/* QR-код — placeholder, заменить на настоящий */}
-					<img
+					{
+						/* <img
 						src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://fclife.ru'
 						alt='QR-код fclife.ru'
 						width={200}
 						height={200}
-					/>
+					/> */
+						<img src='qr.png' alt='QR-код fclife.ru' width={300} height={300} />
+					}
 				</div>
 			</section>
 		</div>

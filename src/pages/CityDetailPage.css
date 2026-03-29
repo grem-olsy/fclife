@@ -63,6 +63,175 @@
 	font-size: 1.05rem;
 }
 
+.desc-paragraph {
+	margin-bottom: 16px;
+}
+
+.desc-section {
+	margin: 24px 0;
+	background: #f8faf6;
+	border-radius: 12px;
+	padding: 20px 24px;
+	border-left: 4px solid #2d5016;
+}
+
+.desc-heading {
+	font-size: 1.15rem;
+	font-weight: 700;
+	color: #2d5016;
+	margin: 0 0 12px;
+}
+
+.desc-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.desc-list li {
+	position: relative;
+	padding-left: 20px;
+	line-height: 1.6;
+}
+
+.desc-list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 8px;
+	height: 8px;
+	background: #2d5016;
+	border-radius: 50%;
+}
+
+.desc-list li strong {
+	color: #2d5016;
+}
+
 .city-detail .btn {
 	display: inline-block;
+}
+
+/* Калькулятор стоимости */
+.cost-calculator {
+	margin: 32px 0 40px;
+	background: #fff;
+	border: 2px solid #e8f5e1;
+	border-radius: 16px;
+	padding: 28px 32px;
+	box-shadow: 0 2px 12px rgba(45, 80, 22, 0.08);
+}
+
+.cost-title {
+	font-size: 1.3rem;
+	color: #2d5016;
+	margin: 0 0 20px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid #e8f5e1;
+}
+
+.cost-controls {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-bottom: 24px;
+}
+
+.cost-field label {
+	font-size: 0.95rem;
+	color: #444;
+	display: block;
+	margin-bottom: 6px;
+}
+
+.cost-stepper {
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.cost-stepper button {
+	width: 36px;
+	height: 36px;
+	border: none;
+	background: #f0f0f0;
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: #333;
+	transition: background 0.15s;
+}
+
+.cost-stepper button:hover {
+	background: #e0e0e0;
+}
+
+.cost-stepper span {
+	width: 48px;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #2d5016;
+}
+
+.cost-checkbox {
+	display: flex !important;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	margin: 0 !important;
+}
+
+.cost-checkbox input[type='checkbox'] {
+	width: 18px;
+	height: 18px;
+	accent-color: #2d5016;
+	cursor: pointer;
+}
+
+.cost-breakdown {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-top: 16px;
+	border-top: 1px solid #eee;
+}
+
+.cost-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.95rem;
+	color: #555;
+	padding: 4px 0;
+}
+
+.cost-row span:last-child {
+	font-weight: 600;
+	color: #333;
+}
+
+.cost-total {
+	margin-top: 8px;
+	padding-top: 12px;
+	border-top: 2px solid #2d5016;
+	font-size: 1.15rem;
+	font-weight: 700;
+	color: #2d5016 !important;
+}
+
+.cost-total span {
+	color: #2d5016 !important;
+}
+
+@media (max-width: 600px) {
+	.cost-calculator {
+		padding: 20px 16px;
+	}
 }

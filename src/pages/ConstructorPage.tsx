@@ -74,16 +74,16 @@ export default function ConstructorPage() {
 						</label>
 						<input
 							type='range'
-							min={2000}
-							max={10000}
+							min={1500}
+							max={6000}
 							step={500}
 							value={maxPrice}
 							onChange={(e) => setMaxPrice(Number(e.target.value))}
 							className='price-slider'
 						/>
 						<div className='price-range'>
-							<span>2 000 ₽</span>
-							<span>10 000 ₽</span>
+							<span>1 500 ₽</span>
+							<span>6 000 ₽</span>
 						</div>
 					</div>
 

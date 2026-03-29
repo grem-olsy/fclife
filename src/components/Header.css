@@ -27,7 +27,7 @@
 }
 
 .logo-img {
-	height: 36px;
+	height: 56px;
 	width: auto;
 }
 
@@ -59,10 +59,21 @@
 
 /* Мобильное меню */
 @media (max-width: 600px) {
+	.header-inner {
+		padding: 0 10px;
+		height: 56px;
+	}
+	.logo {
+		font-size: 1.3rem;
+		gap: 4px;
+	}
+	.logo-img {
+		height: 40px;
+	}
 	.nav {
-		gap: 12px;
+		gap: 8px;
 	}
 	.nav a {
-		font-size: 0.85rem;
+		font-size: 0.75rem;
 	}
 }
