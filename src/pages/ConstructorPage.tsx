@@ -12,7 +12,7 @@ const TRIP_TYPES: TripType[] = [
 export default function ConstructorPage() {
 	// Состояние фильтров
 	const [days, setDays] = useState<1 | 2>(1)
-	const [maxPrice, setMaxPrice] = useState(10000)
+	const [maxPrice, setMaxPrice] = useState(6000)
 	const [selectedTypes, setSelectedTypes] = useState<TripType[]>([])
 
 	// Переключатель чекбокса
