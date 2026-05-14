@@ -15,6 +15,7 @@ export default function Header() {
 					</NavLink>
 					<NavLink to='/constructor'>Конструктор</NavLink>
 					<NavLink to='/cities'>Города</NavLink>
+					<NavLink to='/map'>Карта</NavLink>
 					<NavLink to='/help'>Помощь</NavLink>
 				</nav>
 			</div>

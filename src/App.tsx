@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import ConstructorPage from './pages/ConstructorPage'
 import CitiesPage from './pages/CitiesPage'
 import CityDetailPage from './pages/CityDetailPage'
+import MapPage from './pages/MapPage'
 import HelpPage from './pages/HelpPage'
 import TermsPage from './pages/TermsPage'
 import './App.css'
@@ -19,7 +20,8 @@ function App() {
 						<Route path='/' element={<HomePage />} />
 						<Route path='/constructor' element={<ConstructorPage />} />
 						<Route path='/cities' element={<CitiesPage />} />
-						<Route path='/cities/:id' element={<CityDetailPage />} />
+						<Route path='/cities/:id' element={<CityDetailPage />} />{' '}
+						<Route path='/map' element={<MapPage />} />{' '}
 						<Route path='/help' element={<HelpPage />} />
 						<Route path='/terms' element={<TermsPage />} />
 					</Routes>

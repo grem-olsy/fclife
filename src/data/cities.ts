@@ -10,6 +10,7 @@ export interface City {
 	price: number // стоимость в рублях
 	days: 1 | 2 // 1 день или 2 дня
 	tripTypes: TripType[] // виды туризма
+	coords: [number, number] // [longitude, latitude]
 }
 
 // Тестовые данные — 12 городов Подмосковья
@@ -34,6 +35,7 @@ export const cities: City[] = [
 		price: 2800,
 		days: 1,
 		tripTypes: ['познавательный'],
+		coords: [38.7784, 55.0858],
 	},
 	{
 		id: 'sergiev-posad',
@@ -55,6 +57,7 @@ export const cities: City[] = [
 		price: 2200,
 		days: 1,
 		tripTypes: ['религиозный', 'познавательный'],
+		coords: [38.1348, 56.3101],
 	},
 	{
 		id: 'zvenigorod',
@@ -76,6 +79,7 @@ export const cities: City[] = [
 		price: 1800,
 		days: 1,
 		tripTypes: ['экологический', 'религиозный'],
+		coords: [36.8537, 55.7294],
 	},
 	{
 		id: 'dmitrov',
@@ -97,6 +101,7 @@ export const cities: City[] = [
 		price: 2000,
 		days: 1,
 		tripTypes: ['познавательный'],
+		coords: [37.5219, 56.3437],
 	},
 	{
 		id: 'istra',
@@ -118,6 +123,7 @@ export const cities: City[] = [
 		price: 2800,
 		days: 1,
 		tripTypes: ['религиозный', 'познавательный'],
+		coords: [36.8583, 55.9166],
 	},
 	{
 		id: 'serpukhov',
@@ -139,6 +145,7 @@ export const cities: City[] = [
 		price: 3500,
 		days: 1,
 		tripTypes: ['экологический', 'познавательный'],
+		coords: [37.4115, 54.9147],
 	},
 	{
 		id: 'mozhaisk',
@@ -160,6 +167,7 @@ export const cities: City[] = [
 		price: 5500,
 		days: 2,
 		tripTypes: ['познавательный', 'экологический'],
+		coords: [36.0189, 55.507],
 	},
 	{
 		id: 'dubna',
@@ -181,6 +189,7 @@ export const cities: City[] = [
 		price: 4200,
 		days: 2,
 		tripTypes: ['познавательный', 'экологический'],
+		coords: [37.1674, 56.7332],
 	},
 	{
 		id: 'borovsk',
@@ -202,6 +211,7 @@ export const cities: City[] = [
 		price: 5200,
 		days: 2,
 		tripTypes: ['познавательный', 'религиозный'],
+		coords: [36.4876, 55.2099],
 	},
 	{
 		id: 'klin',
@@ -224,6 +234,7 @@ export const cities: City[] = [
 		price: 2800,
 		days: 1,
 		tripTypes: ['познавательный'],
+		coords: [36.7253, 56.3375],
 	},
 	{
 		id: 'zaraisk',
@@ -240,6 +251,7 @@ export const cities: City[] = [
 		price: 2500,
 		days: 1,
 		tripTypes: ['познавательный'],
+		coords: [38.8745, 54.7624],
 	},
 	{
 		id: 'pereslavl',
@@ -261,5 +273,6 @@ export const cities: City[] = [
 		price: 6000,
 		days: 2,
 		tripTypes: ['познавательный', 'экологический', 'религиозный'],
+		coords: [38.8518, 56.7333],
 	},
 ]
